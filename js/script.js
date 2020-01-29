@@ -2,6 +2,7 @@
 // Creare un oggetto che descriva uno studente con le seguenti proprietà: nome, cognome e età. Stampare a schermo attraverso il for in tutte le proprietà.
 // Dare la possibilità all’utente attraverso 3 prompt di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
 
+$(document).ready(function(){
 
 var studente = {
   'nome' : 'simone',
@@ -45,8 +46,10 @@ var eta_oggetto = prompt('inserisci età');
 studenti[3].nome = nome_oggetto;
 studenti[3].cognome = cognome_oggetto;
 studenti[3].eta = eta_oggetto;
-console.log(studenti[3]);
+// console.log(studenti[3]);
 
 for (var i = 0; i < studenti.length; i++) {
   $('.nomi_studenti ul').append('<li>'+studenti[i].nome + ' ' + studenti[i].cognome+'</li>');
 }
+
+});
