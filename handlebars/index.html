@@ -2,13 +2,30 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title></title>
   </head>
   <body>
 
+    <div class="form">
+      <input type="text" placeholder="inserisci testo">
+      <button class='invia'>invia</button>
+    </div>
+    <div class="message">
 
+    </div>
+
+
+    <script id="entry-template" type="text/x-handlebars-template">
+    <div class="entry {{color}}">
+      <h1>{{title}}</h1>
+      <div class="body">
+        {{text}}
+      </div>
+    </div>
+  </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.2/handlebars.js" integrity="sha256-N5vR06TQIR+YD8oS0yndB1pu/EITeijW52dwezEq7/g=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.2/handlebars.min.js" integrity="sha256-MlbTFXdOM7EZphnz0OyXQqPt2zBOjfRXCq14CfgSsS0=" crossorigin="anonymous"></script>
   <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>
